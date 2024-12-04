@@ -3,8 +3,9 @@
 
 <!-- 
 First: change or add current year in my_advent/__init__.py, readme title and readme AoC URL above
-Start with: pip install -e .
-Daily start run: python3.10 init_new_day.py <day_nr>
+Make sure to add advent-of-code-data dependency, and get your AoC session token and put it into config:
+    [aocd-token] > ~/.config/aocd/token
+Daily start, run: python3.10 init_new_day.py <day_nr>
 -->
 
 <span style="font-size:large">
