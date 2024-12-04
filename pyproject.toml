@@ -1,0 +1,18 @@
+[project]
+name = "my-advent-2024"
+version = "0.1.0"
+description = "My Advent of Code 2024"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.1.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.8.1",
+]
+
+[tool.ruff]
+line-length = 88
