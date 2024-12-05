@@ -66,9 +66,9 @@ wheels = [
 ]
 
 [[package]]
-name = "my-advent-2024"
+name = "my-advent"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "advent-of-code-data" },
     { name = "numpy" },
@@ -76,7 +76,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "my-advent-2024" },
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -89,7 +88,6 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "my-advent-2024", virtual = "." },
     { name = "pytest", specifier = ">=8.3.4" },
     { name = "ruff", specifier = ">=0.8.1" },
 ]

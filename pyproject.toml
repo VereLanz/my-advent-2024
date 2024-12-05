@@ -1,5 +1,5 @@
 [project]
-name = "my-advent-2024"
+name = "my-advent"
 version = "0.1.0"
 description = "My Advent of Code 2024"
 readme = "README.md"
@@ -11,13 +11,15 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "my-advent-2024",
     "pytest>=8.3.4",
     "ruff>=0.8.1",
 ]
 
+[tool.uv]
+package = true
+
+[tool.setuptools]
+py-modules = ["my_advent"]
+
 [tool.ruff]
 line-length = 88
-
-[tool.uv.sources]
-my-advent-2024 = { workspace = true }
