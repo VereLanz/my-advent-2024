@@ -11,9 +11,13 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "my-advent-2024",
     "pytest>=8.3.4",
     "ruff>=0.8.1",
 ]
 
 [tool.ruff]
 line-length = 88
+
+[tool.uv.sources]
+my-advent-2024 = { workspace = true }
