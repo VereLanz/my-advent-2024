@@ -67,13 +67,13 @@ No one at the North Pole has seen the Chief Historian (CH) for a while, but he h
 
 ---
 ## Day 1
-### *Better make a list*
+### *Better make a list and check it twice*
 [code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day1.py)
 ### Part One &#11088;
 We need a list of location at which to look for the CH. In his office, two groups make two different lists. How different exactly are they, by list distance?
 
-### Part Two
--
+### Part Two &#11088;
+Maybe not all of these numbers listed are correct numbers. Let's look at how similar the list entries actually are.
 
 [top &#8593;](#top)
 
