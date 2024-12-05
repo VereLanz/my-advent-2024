@@ -61,8 +61,19 @@ Daily start, run: python3.10 init_new_day.py <day_nr>
 
 <!-- Star emoji: &#11088; -->
 ---
-## Day 1
 
+# 2024
+No one at the North Pole has seen the Chief Historian (CH) for a while, but he has always been present for the sleigh launch event. Better go look for him, we need to find him before Christmas!
+
+---
+## Day 1
+### *Better make a list*
+[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day1.py)
+### Part One
+We need a list of location at which to look for the CH. In his office, two groups make two different lists. How different exactly are they, by list distance?
+
+### Part Two
+-
 
 [top &#8593;](#top)
 
