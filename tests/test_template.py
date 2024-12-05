@@ -1,15 +1,14 @@
-from my_advent.day_template import a as a
-from my_advent.day_template import b as b
+from my_advent.day_template import a, b
 
 
 EXAMPLE_INPUT = []
+EXAMPLE_RESULT_A = 0
+EXAMPLE_RESULT_B = 0
 
 
 def test_example_a():
-    example_result = 0
-    assert a(EXAMPLE_INPUT) == example_result
+    assert a(EXAMPLE_INPUT) == EXAMPLE_RESULT_A
 
 
 def test_example_b():
-    example_result = 0
-    assert b(EXAMPLE_INPUT) == example_result
+    assert b(EXAMPLE_INPUT) == EXAMPLE_RESULT_B

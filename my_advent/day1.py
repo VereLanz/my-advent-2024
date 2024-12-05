@@ -2,7 +2,7 @@ from pathlib import Path
 
 import numpy as np
 
-from my_advent import get_todays_puzzle, MyPuzzle
+from my_advent import get_todays_puzzle
 
 
 def compare_list_distance(inputs: list[str]) -> int:
@@ -24,19 +24,15 @@ def compare_list_similarity(inputs: list[str]) -> int:
     return sum
 
 
-def solve_a(puzzle: MyPuzzle):
-    answer_a = compare_list_distance(puzzle.input_lines)
-    puzzle.submit_a(answer_a)
-
-
-def solve_b(puzzle: MyPuzzle):
-    answer_b = compare_list_similarity(puzzle.input_lines)
-    puzzle.submit_b(answer_b)
+# only for least effort template working each day
+a = compare_list_distance
+b = compare_list_similarity
 
 
 if __name__ == "__main__":
     # assumes the filename is always "day{day_nr}"
     day_nr = int(Path(__file__).stem[3:])
     my_puzzle = get_todays_puzzle(day_nr)
-    # solve_a(my_puzzle)
-    # solve_b(my_puzzle)
+
+    # my_puzzle.submit_a(a(my_puzzle.input_lines))
+    # my_puzzle.submit_b(b(my_puzzle.input_lines))

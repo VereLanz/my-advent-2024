@@ -1,5 +1,4 @@
-from my_advent.day1 import compare_list_distance as a
-from my_advent.day1 import compare_list_similarity as b
+from my_advent.day1 import  a, b
 
 EXAMPLE_INPUT = [
     "3   4",
@@ -9,13 +8,13 @@ EXAMPLE_INPUT = [
     "3   9",
     "3   3",
 ]
+EXAMPLE_RESULT_A = 11
+EXAMPLE_RESULT_B = 31
 
 
 def test_example_a():
-    example_result = 11
-    assert a(EXAMPLE_INPUT) == example_result
+    assert a(EXAMPLE_INPUT) == EXAMPLE_RESULT_A
 
 
 def test_example_b():
-    example_result = 31
-    assert b(EXAMPLE_INPUT) == example_result
+    assert b(EXAMPLE_INPUT) == EXAMPLE_RESULT_B
