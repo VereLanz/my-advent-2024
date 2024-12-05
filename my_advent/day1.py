@@ -4,8 +4,8 @@ from my_advent import get_todays_puzzle, MyPuzzle
 
 
 def compare_list_distance(inputs: list[str]) -> int:
-    left_list = [int(i[0]) for i in inputs]
-    right_list = [int(i[-1]) for i in inputs]
+    left_list = [int(i.split()[0]) for i in inputs]
+    right_list = [int(i.split()[-1]) for i in inputs]
     sum = 0
     for left, right in zip(sorted(left_list), sorted(right_list)):
         sum += abs(left - right)
