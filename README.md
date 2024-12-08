@@ -114,7 +114,7 @@ Maybe not all of these numbers listed are correct numbers. Let's look at how sim
 ## Day 6
 ### *Guards in 1518*
 [code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day6.py)
-### Part One
+### Part One &#11088;
 We have timetravelled to 1518, and are looking for the CH there. We must not meet people from that time,
 so we have to avoid this guard here. How many spaces do they visit with their strict guarding pattern?
 

@@ -38,7 +38,7 @@ class Guard:
         self.pos += self.direction
     
     def turn_right(self):
-        self.direction *= complex(0, -1)
+        self.direction *= complex(0, 1)
     
 
 def set_starting_guard(spots: np.ndarray) -> Guard:
@@ -58,14 +58,21 @@ def calculate_guard_visited_spots(inputs: list[str]) -> int:
     # input 0,0 is "left lower corner", np 0,0 is "upper left", (y, x)!
     spots = np.rot90(spots, -1)
     guard = set_starting_guard(spots)
+    spots[guard.current_coords] = "x"
     
-    
-
-    # look for guard marker DIRECTION_MAP.keys() -> init Guard
-    # check what is in front of guard
-    ## . or x -> take a step, mark new pos as x !
-    ## # -> turn right
-    ## out of bounds -> done
+    # walk the guard and set visited space 'x' until Index is out of bounds (= leaving)
+    while True:
+        try:
+            # negative coord would wrap around, but we don't want that here
+            if any(coord < 0 for coord in guard.coords_in_front):
+                raise IndexError("Negative coordinates are not accepted here.")
+            if spots[guard.coords_in_front] == "#":
+                guard.turn_right()
+            guard.take_step()
+            spots[guard.current_coords] = "x"
+        except IndexError:
+            print("The guard has left the premises...")
+            break
     
     return len(np.where(spots == "x")[0])
 
