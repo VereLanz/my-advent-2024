@@ -119,7 +119,8 @@ We have timetravelled to 1518, and are looking for the CH there. We must not mee
 so we have to avoid this guard here. How many spaces do they visit with their strict guarding pattern?
 
 ### Part Two
--
+With one little extra obstruction, the guard could be set to walk in a loop. Find all the spots that could
+work for this, how many are there?
 
 [top &#8593;](#top)
 

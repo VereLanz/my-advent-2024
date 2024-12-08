@@ -77,13 +77,13 @@ def calculate_guard_visited_spots(inputs: list[str]) -> int:
     return len(np.where(spots == "x")[0])
 
 
-def b(inputs: list[str]) -> int:
+def find_guard_looping_spots(inputs: list[str]) -> int:
     return len(inputs)
 
 
 # only for least effort template working each day
 a = calculate_guard_visited_spots
-b = b
+b = find_guard_looping_spots
 
 
 if __name__ == "__main__":

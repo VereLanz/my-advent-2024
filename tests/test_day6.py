@@ -14,7 +14,7 @@ EXAMPLE_INPUT = [
     "......#...",
 ]
 EXAMPLE_RESULT_A = 41
-EXAMPLE_RESULT_B = 0
+EXAMPLE_RESULT_B = 6
 
 
 def test_example_a():
