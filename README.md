@@ -100,10 +100,11 @@ How many safe reports are there now?
 [code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day3.py)
 ### Part One &#11088;
 The warehouse computer is trying to send commands, but it comes out corrupted. 
-Figure out which (mul) commands it was trying to send!
+Figure out which (`mul`) commands it was trying to send!
 
-### Part Two
--
+### Part Two &#11088;
+Additionally, there are `do()` and `don't()` statements included, which affect the commands coming afterwards.
+With this in mind, which `mul` commands are to be evaluated?
 
 [top &#8593;](#top)
 
