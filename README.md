@@ -96,7 +96,14 @@ How many safe reports are there now?
 
 ---
 ## Day 3
+### *Corrupted Computers*
+[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day3.py)
+### Part One &#11088;
+The warehouse computer is trying to send commands, but it comes out corrupted. 
+Figure out which (mul) commands it was trying to send!
 
+### Part Two
+-
 
 [top &#8593;](#top)
 
