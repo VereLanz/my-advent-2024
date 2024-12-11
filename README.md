@@ -80,7 +80,14 @@ Maybe not all of these numbers listed are correct numbers. Let's look at how sim
 
 ---
 ## Day 2
+### *Red-Nosed Reactor Safety*
+[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day2.py)
+### Part One &#11088;
+A list of reports needs to be checked for safe and unsafe ones. Only gradually in- or decreasing lines of numbers are good. 
+How many are there?
 
+### Part Two
+-
 
 [top &#8593;](#top)
 
