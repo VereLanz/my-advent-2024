@@ -86,8 +86,9 @@ Maybe not all of these numbers listed are correct numbers. Let's look at how sim
 A list of reports needs to be checked for safe and unsafe ones. Only gradually in- or decreasing lines of numbers are good. 
 How many are there?
 
-### Part Two
--
+### Part Two &#11088;
+There is the option of adding a Problem Dampener, which allows us to remove 1 entry from each report to make it safe. 
+How many safe reports are there now?
 
 [top &#8593;](#top)
 

@@ -10,7 +10,7 @@ EXAMPLE_INPUT = [
     "1 3 6 7 9",
 ]
 EXAMPLE_RESULT_A = 2
-EXAMPLE_RESULT_B = 0
+EXAMPLE_RESULT_B = 4
 
 
 def test_example_a():
