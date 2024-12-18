@@ -31,18 +31,42 @@ def find_vertical_words(field: list[str], search_word: str) -> int:
 
 
 def find_diagonal_words(field: list[str], search_word: str) -> int:
-    find_count = 0
     # create diagonals to search in instead of lines or rows
     diagonals = []
-    for i in range(len(field)):  # line index
-        for j in range(i+1):  # row index
-
-
     
+    # from lower left to upper right
+    for i in range(len(field) + len(field[0]) - 1):
+        diagonal = []
+        for j in range(i+1):
+            try:
+                # some indices will be out of range due to the nature of this walk
+                diagonal.append(field[i-j][j])
+            except IndexError:
+                pass
+        diagonals.append("".join(diagonal))
+
+    # from upper left to lower right
+    longest_dim = max(len(field), len(field[0]))
+    for offset in range(longest_dim):
+        diagonal_up = []
+        diagonal_down = []
+        for i in range(offset, longest_dim):
+            try:
+                # some indices will be out of range due to the nature of this walk
+                diagonal_up.append(field[i][i-offset])
+                diagonal_down.append(field[i-offset][i])
+            except IndexError:
+                pass
+        diagonals.append("".join(diagonal_up))
+        if offset == 0:
+            # in this one case both diagonals are the same, don't count double!
+            continue
+        diagonals.append("".join(diagonal_down))
     
-    diagonal = "".join([line[i] for line in field])
-    if search_word in row or search_word in row[::-1]:
-        find_count += 1
+    find_count = 0
+    for diagonal in diagonals:
+        if search_word in diagonal or search_word in diagonal[::-1]:
+            find_count += 1
     return find_count
 
 
