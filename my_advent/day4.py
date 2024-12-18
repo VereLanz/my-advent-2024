@@ -15,8 +15,8 @@ def find_all_XMAS(inputs: list[str]) -> int:
 def find_horizontal_words(field: list[str], search_word: str) -> int:
     find_count = 0
     for line in field:
-        if search_word in line or search_word in line[::-1]:
-            find_count += 1
+        find_count += line.count(search_word)
+        find_count += line[::-1].count(search_word)
     return find_count
 
 
@@ -25,8 +25,8 @@ def find_vertical_words(field: list[str], search_word: str) -> int:
     # create letter rows to search in instead of lines
     for i in range(len(field[0])):
         row = "".join([line[i] for line in field])
-        if search_word in row or search_word in row[::-1]:
-            find_count += 1
+        find_count += row.count(search_word)
+        find_count += row[::-1].count(search_word)
     return find_count
 
 
@@ -65,18 +65,30 @@ def find_diagonal_words(field: list[str], search_word: str) -> int:
     
     find_count = 0
     for diagonal in diagonals:
-        if search_word in diagonal or search_word in diagonal[::-1]:
-            find_count += 1
+        find_count += diagonal.count(search_word)
+        find_count += diagonal[::-1].count(search_word)
     return find_count
 
 
-def b(inputs: list[str]) -> int:
-    return len(inputs)
+def find_actual_X_MAS(inputs: list[str]) -> int:
+    search_word = "MAS"
+    x_mas_count = 0
+    # search diagonally for every 3x3 segment
+    for i in range(len(inputs) - 2):
+        for j in range(len(inputs[0]) - 2):
+            search_lines = inputs[i : i+3]
+            search_field = [
+                [line[col] for col in range(j, j+3)] for line in search_lines
+            ]
+            # 2 MAS are found diagonally in 3x3 only if in an X shape
+            if find_diagonal_words(search_field, search_word) == 2:
+                x_mas_count += 1
+    return x_mas_count
 
 
 # only for least effort template working each day
 a = find_all_XMAS
-b = b
+b = find_actual_X_MAS
 
 
 if __name__ == "__main__":

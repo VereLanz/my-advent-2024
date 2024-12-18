@@ -114,11 +114,11 @@ With this in mind, which `mul` commands are to be evaluated?
 ## Day 4
 ### *Word Search*
 [code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day4.py)
-### Part One
+### Part One &#11088;
 An XMAS word search! Look for all the occureneces of XMAS in the word search. They can appear in all kind of directions!
 
-### Part Two
--
+### Part Two &#11088;
+This was not what the elf wants, they want two MAS in the shape of an X actually!
 
 [top &#8593;](#top)
 

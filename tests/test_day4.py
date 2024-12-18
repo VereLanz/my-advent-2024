@@ -14,7 +14,7 @@ EXAMPLE_INPUT = [
     "MXMXAXMASX",
 ]
 EXAMPLE_RESULT_A = 18
-EXAMPLE_RESULT_B = 0
+EXAMPLE_RESULT_B = 9
 
 
 def test_example_a():
@@ -33,4 +33,14 @@ def test_example_a():
 
 
 def test_example_b():
+    # .M.S......
+    # ..A..MSMS.
+    # .M.S.MAA..
+    # ..A.ASMSM.
+    # .M.S.M....
+    # ..........
+    # S.S.S.S.S.
+    # .A.A.A.A..
+    # M.M.M.M.M.
+    # ..........
     assert b(EXAMPLE_INPUT) == EXAMPLE_RESULT_B
