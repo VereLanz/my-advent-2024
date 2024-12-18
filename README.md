@@ -67,8 +67,8 @@ No one at the North Pole has seen the Chief Historian (CH) for a while, but he h
 
 ---
 ## Day 1
-### *Better make a list and check it twice*
-[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day1.py)
+### *Better make a list and check it twice* - [Puzzle Page](https://adventofcode.com/2024/day/1)
+[my code &#8614;](my_advent/day1.py)
 ### Part One &#11088;
 We need a list of location at which to look for the CH. In his office, two groups make two different lists. How different exactly are they, by list distance?
 
@@ -80,8 +80,8 @@ Maybe not all of these numbers listed are correct numbers. Let's look at how sim
 
 ---
 ## Day 2
-### *Red-Nosed Reactor Safety*
-[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day2.py)
+### *Red-Nosed Reactor Safety* - [Puzzle Page](https://adventofcode.com/2024/day/2)
+[my code &#8614;](my_advent/day2.py)
 ### Part One &#11088;
 A list of reports needs to be checked for safe and unsafe ones. Only gradually in- or decreasing lines of numbers are good. 
 How many are there?
@@ -96,8 +96,8 @@ How many safe reports are there now?
 
 ---
 ## Day 3
-### *Corrupted Computers*
-[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day3.py)
+### *Corrupted Computers* - [Puzzle Page](https://adventofcode.com/2024/day/3)
+[my code &#8614;](my_advent/day3.py)
 ### Part One &#11088;
 The warehouse computer is trying to send commands, but it comes out corrupted. 
 Figure out which (`mul`) commands it was trying to send!
@@ -112,8 +112,8 @@ With this in mind, which `mul` commands are to be evaluated?
 
 ---
 ## Day 4
-### *Word Search*
-[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day4.py)
+### *Cross Words Puzzle* - [Puzzle Page](https://adventofcode.com/2024/day/4)
+[my code &#8614;](my_advent/day4.py)
 ### Part One &#11088;
 An XMAS word search! Look for all the occureneces of XMAS in the word search. They can appear in all kind of directions!
 
@@ -134,8 +134,8 @@ This was not what the elf wants, they want two MAS in the shape of an X actually
 
 ---
 ## Day 6
-### *Guards in 1518*
-[code &#8614;](https://github.com/VereLanz/my-advent-2024/blob/main/my_advent/day6.py)
+### *Guards in 1518* - [Puzzle Page](https://adventofcode.com/2024/day/6)
+[my code &#8614;](my_advent/day6.py)
 ### Part One &#11088;
 We have timetravelled to 1518, and are looking for the CH there. We must not meet people from that time,
 so we have to avoid this guard here. How many spaces do they visit with their strict guarding pattern?

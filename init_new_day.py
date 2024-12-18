@@ -6,13 +6,15 @@ import webbrowser
 from my_advent import YEAR
 
 
-README_DAILY_TEMPLATE = """### *title*
-[code &#8614;](https://github.com/VereLanz/my-advent-{year}/blob/main/my_advent/day{day_nr}.py)
+README_DAILY_TEMPLATE = (
+"""### *title* - [Puzzle Page](https://adventofcode.com/{year}/day/{day_nr})
+[my code &#8614;](my_advent/day{day_nr}.py)
 ### Part One
 -
 
 ### Part Two
 -"""
+)
 
 
 if __name__ == "__main__":
@@ -25,6 +27,7 @@ if __name__ == "__main__":
     day_nr = int(sys.argv[1])
     here = Path(__file__).parent
 
+    aoc_url = f"https://adventofcode.com/{YEAR}/day/{day_nr}"
     # copy day_template into f"day{day_nr}".py
     shutil.copy(
         here / "my_advent" / "day_template.py",
@@ -57,6 +60,6 @@ if __name__ == "__main__":
 
     # open challenge of the day
     # also print link for re-use or in case browser did not open (e.g. WSL settings)
-    print(f"https://adventofcode.com/{YEAR}/day/{day_nr}")
-    webbrowser.open(f"https://adventofcode.com/{YEAR}/day/{day_nr}")
+    print(aoc_url)
+    webbrowser.open(aoc_url)
     
