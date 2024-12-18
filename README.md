@@ -126,7 +126,13 @@ This was not what the elf wants, they want two MAS in the shape of an X actually
 
 ---
 ## Day 5
+### *title* - [Puzzle Page](https://adventofcode.com/2024/day/5)
+[my code &#8614;](my_advent/day5.py)
+### Part One
+-
 
+### Part Two
+-
 
 [top &#8593;](#top)
 
